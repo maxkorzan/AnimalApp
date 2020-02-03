@@ -12,7 +12,6 @@ public class Animal {
     //overloaded constructor
 
 
-
     //setters and getters
     public void setName(String name){
         this.name = name;
@@ -47,9 +46,19 @@ public class Animal {
 
     //getPet method to print out data fields
     public void getPet(){
+        Animal a = new Animal();
 
+        a.setName("Sparky");
+        a.setType("Dog");
+        a.setDescription("A small, but loud, happy puppy");
+        a.setPrice(399.95);
+        a.setInStock(true);
 
-
+        System.out.println("Animal name: "+ a.getName());
+        System.out.println("Animal type: " + a.getType());
+        System.out.println("Animal description: " + a.getDescription());
+        System.out.println("Animal price: " + a.getPrice());
+        System.out.println("Animal in stock: " + a.getInStock());
 
     }
 
